@@ -22,9 +22,9 @@ class Client{
      * Returnerer false om den aktuelle kolonnen ikke er uregelrett.
      * Returnerer true om den aktuelle kolonnen er uregelrett.
     */
-	function display_column(array $data){
-		$required_cols = array('tbl', 'column_name');
-		foreach($required_cols as $rq){if(!isset($data[$rq])){ return false; }}
+	function displayColumn(array $data){
+		$requiredColumns = array('tbl', 'column_name');
+		foreach($requiredColumns as $rq){if(!isset($data[$rq])){ return false; }}
         
         /*
          * Eksempel på hvordan $data arrayen som sendes av info.class.php ser ut
@@ -56,7 +56,7 @@ class Client{
      * Returner false om spørringen ikke er uregelrett.
      * Returner spørringen om den er uregelrett.
     */
-    function custom_query(array $data){
+    function customQuery(array $data){
         
         return false;
     }
@@ -68,7 +68,7 @@ class Client{
      * Sjekker om de nødvendige delene av variabelen $i_a er satt, 
      * og viderefører handlingen til en class om alt stemmer
     */
-    function display_page(array $i_a){
+    function displayPage(array $i_a){
         
     }
     
@@ -77,7 +77,7 @@ class Client{
      * F.eks.: fjern ; fra starten og slutten til en RFID.
      * Returnerer verdien av feltet.
     */
-    function save_column(array $data){
+    function saveColumn(array $data){
         
         return $data['column_value'];
     }
